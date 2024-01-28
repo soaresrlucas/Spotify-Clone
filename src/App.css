@@ -1,0 +1,18 @@
+:root {
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --bg-icon: #131313;
+  --bg-arrow-color: rgba(0,0,0,7);
+}
+
+body {
+  background-color: #000;
+  font-family: var(--font-dm-sans);
+}
+
+.main-container {
+  max-width: 80vw;
+  height: 100vh;
+  margin-left: 320px;
+  margin-right: 56px;
+}
