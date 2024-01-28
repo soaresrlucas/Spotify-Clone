@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Spotify Clone
+Bem-vindo ao repositório do meu projeto de clone da landing page do Spotify! Esta aplicação web foi desenvolvida utilizando React e é uma oportunidade para estudar e praticar HTML, CSS, JavaScript e React. A barra de pesquisa é totalmente funcional, permitindo que você pesquise entre os artistas disponíveis na fake API que criei, chamada artists.json.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pré-requisitos
+Certifique-se de ter o Node.js instalado em sua máquina antes de prosseguir.
 
-## Available Scripts
+## Instalação
+1. Clone o repositório para o seu ambiente local:
+   
+`git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
-In the project directory, you can run:
+2. Navegue até o diretório do projeto:
 
-### `npm start`
+`cd Spotify-Clone`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Instale as dependências:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm install`
 
-### `npm test`
+## Uso
+Execute a aplicação em modo de desenvolvimento:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm start`
 
-### `npm run build`
+> Abra http://localhost:3000 no seu navegador para visualizar o projeto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades
+* __Barra de Pesquisa__: A barra de pesquisa permite que você busque por artistas disponíveis na fake API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Fake API
+A aplicação utiliza uma fake API para simular dados de artistas. a API está em ./src/ApiArtsts/artists.json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciar a api, vá para o diretório ApiArtists e digite no terminal:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`json-server --watch artists.json --port 2000`
+> A API está por padrão na porta 2000, pois o React já estará utilizando a porta 3000. Caso deseje trocar, deverá fazer as devidas modificações no código para que a API seja consumida.
